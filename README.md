@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+🌤️ Weather App React / Express / OpenWeather API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A sleek, user-friendly weather application built with React for the frontend and Express.js for the backend. This app allows users to check the current weather and forecasts for any location they search for, fetching data from the OpenWeather API.
 
-## Available Scripts
+🖼️ Project Overview
+![Project Preview](images/banner.png)
 
-In the project directory, you can run:
+🚀 Key Features
+Search by City: Search for weather data by entering a city name.
 
-### `npm start`
+Weather Forecast: Get a 5-day weather forecast, including temperature, humidity, wind speed, and more.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Responsive Design: The app adapts to both mobile and desktop devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Dark/Light Mode: Toggle between dark and light themes to suit your preference.
 
-### `npm test`
+Current Location: Automatically fetch weather data based on the user’s current location using geolocation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Smooth Animations: Interactive and smooth transitions for a modern feel.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Project Demo GIF](images/gif.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🛠️ Technologies Used
+Frontend: React for building an interactive and dynamic user interface.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Backend: Express.js for handling API requests and routing.
 
-### `npm run eject`
+Weather API: OpenWeatherMap API to fetch real-time weather data.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Styling: Custom CSS + Flexbox for a responsive layout.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Node.js: Runtime for the React app and Express backend.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+📋 How to Run
+Backend Setup (Express.js)
+Clone the repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+Install dependencies: Make sure you have Node.js and npm installed.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Get an API Key:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Sign up at OpenWeatherMap to get your API key.
 
-### Analyzing the Bundle Size
+Insert the API key into the server.js file (under the API request section).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Start the backend: Run the following command to start the Express server:
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+npm start
+The backend will be running at http://localhost:5000.
 
-### Advanced Configuration
+Frontend Setup (React)
+Navigate to the frontend directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+cd frontend
+Install dependencies: Ensure that Node.js and npm are installed. Then, run:
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+npm install
+Start the frontend: Run the React frontend using:
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start
+The frontend will be available at http://localhost:3000.
+
+📊 Contributing
+We welcome contributions! If you would like to help improve the app, feel free to fork the repository and submit a pull request.
+
+Steps to contribute:
+Fork the repo
+
+Clone your fork to your local machine
+
+Create a new branch:
+
+
+git checkout -b feature/your-feature-name
+Commit your changes
+
+Push to your branch
+
+Open a pull request
+
+📌 Notes
+Make sure you are running both the backend and frontend for the app to work properly.
+
+If you're facing permission issues, try running commands as an Administrator.
+
+📄 License
+MIT License
+
+Copyright (c) 2025 [Probyte5D]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
