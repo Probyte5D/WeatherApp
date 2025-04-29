@@ -43,9 +43,13 @@
     "@svgr/webpack": "^8.1.0",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
-    "postcss": "^8.5.3",
+    "postcss": "^8.4.31",          
     "resolve-url-loader": "^5.0.0",
     "webpack": "^5.99.7",
     "webpack-dev-middleware": "^7.4.2"
+  },
+  "overrides": {
+    "nth-check": "^2.1.1",
+    "postcss": "8.4.31"
   }
 }
