@@ -25,3 +25,6 @@ yarn-error.log*
 
 # Ignora la cartella .history
 .history/
+
+# environment variables
+.env

@@ -21,7 +21,7 @@ function SearchMain() {
 
   const getWeatherInfo = async () => {
     try {
-      const apiKey = "3231b0445e3d51085538b0befe668db4";
+      const apiKey = process.env.REACT_APP_OPENWEATHERMAP_KEY;
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&units=metric&appid=${apiKey}`;
 
       const res = await fetch(url);
