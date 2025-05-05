@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const Forecast = ({ coords }) => {
-  const [forecast, setForecast] = useState([]); // Inizializza con un array vuoto
-  const [loading, setLoading] = useState(true); // Stato per gestire il caricamento
-
+  const [forecast, setForecast] = useState([]);
+  const [loading, setLoading] = useState(true); 
   const fetchForecastData = async () => {
     try {
       const response = await axios.get(
@@ -24,7 +23,7 @@ const Forecast = ({ coords }) => {
     } catch (error) {
       console.error("Errore nel recupero della previsione:", error);
     } finally {
-      setLoading(false); // Imposta lo stato di caricamento su false dopo il completamento
+      setLoading(false); 
     }
   };
 
@@ -32,8 +31,8 @@ const Forecast = ({ coords }) => {
     if (coords) {
       fetchForecastData();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Esegui solo una volta al montaggio del componente
+    
+  }, []); 
 
   if (loading && forecast.length === 0) {
     return <div>Caricamento previsione...</div>;

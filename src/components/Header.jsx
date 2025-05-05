@@ -5,7 +5,7 @@ function Header() {
     <header>
       <nav>
         <div className="nav-links" id="navLnks">
-          <i className="fa fa-times" onClick={() => { /* logica per nascondere il menu */ }}></i>
+          <i className="fa fa-times" onClick={() => {}}></i>
           <ul>
             <li><a href="#current-weather">HOME</a></li>
             <li><a href="#current-weather">CURRENT</a></li>

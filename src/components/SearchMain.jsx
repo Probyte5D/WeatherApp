@@ -53,22 +53,22 @@ function SearchMain() {
   const video = weatherVideos[weatherType] || weatherVideos.Default;
   const uniqueVideos = Array.from(new Set([video, ...Object.values(weatherVideos)]));
   setVideoList(uniqueVideos);
-  setBgVideo(video || null); // Assicurati che non venga impostato un valore vuoto
+  setBgVideo(video || null); 
 } catch (error) {
   console.log(error);
 }
 };
-
+// Cambia il video visibile cambia il video ogni 5 sec
   useEffect(() => {
     if (videoList.length > 0) {
       const intervalId = setInterval(() => {
         const randomVideo = videoList[Math.floor(Math.random() * videoList.length)];
-        setBgVideo(randomVideo); // Cambia il video visibile
-      }, 5000); // Cambia video ogni 3 secondi
+        setBgVideo(randomVideo); 
+      }, 5000);
 
-      return () => clearInterval(intervalId); // Pulizia dell'intervallo
+      return () => clearInterval(intervalId); 
     }
-  }, [videoList]); // Rileva ogni cambiamento in videoList
+  }, [videoList]); 
 
   useEffect(() => {
     getWeatherInfo();
@@ -77,7 +77,7 @@ function SearchMain() {
   // Gestisce il caricamento del video
   const handleVideoLoaded = () => {
     const videoElement = document.querySelector('.details-container video');
-    videoElement.classList.add('active'); // Aggiungi la classe 'active' per attivare la transizione
+    videoElement.classList.add('active'); 
   };
 
   return (
@@ -107,7 +107,7 @@ function SearchMain() {
           autoPlay
           muted
           loop
-          onLoadedData={handleVideoLoaded} // Chiamato quando il video è caricato
+          onLoadedData={handleVideoLoaded} 
         ></video>
       </div>
     </>

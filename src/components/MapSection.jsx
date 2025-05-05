@@ -12,7 +12,7 @@ function MapSection() {
         attribution: "© OpenStreetMap contributors",
       }).addTo(map);
     }
-  }, []); // Il secondo parametro [] assicura che venga eseguito solo una volta
+  }, []); 
 
   return (
     <div>

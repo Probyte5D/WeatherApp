@@ -1,5 +1,5 @@
 const getWeatherIcon = (description) => {
-  console.log("Descrizione meteo:", description); // Aggiungi un log per capire cosa ricevi
+  console.log("Descrizione meteo:", description); 
   switch (description.toLowerCase()) {
     case "clear sky":
       return "wi wi-day-sunny";
@@ -20,7 +20,7 @@ const getWeatherIcon = (description) => {
     case "mist":
       return "wi wi-fog";
     default:
-      return "wi wi-na"; // Fallback se non trova la descrizione
+      return "wi wi-na"; 
   }
 };
 

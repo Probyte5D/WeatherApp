@@ -77,7 +77,7 @@ header .nav-links a {
 }
 
 header .nav-links a:hover {
-  color: #ff6f61; /* Cambia il colore al passaggio del mouse */
+  color: #ff6f61; 
 }
 
 header .logo {
@@ -172,14 +172,14 @@ header .logo {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Copre senza distorsioni */
-  z-index: -1; /* Il video rimane dietro al contenuto del widget */
-  opacity: 0; /* Parte invisibile */
-  transition: opacity 3s ease-in-out; /* Transizione su opacità */
+  object-fit: cover; 
+  z-index: -1; 
+  opacity: 0; 
+  transition: opacity 3s ease-in-out; 
 }
 
 .details-container video.active {
-  opacity: 1; /* Quando il video è attivo, diventa visibile */
+  opacity: 1; 
 } 
    .background {
     position: fixed;
@@ -231,7 +231,7 @@ backdrop-filter: blur(10px);
    }
    
    .topRow .weatherIcon i {
-     font-size: 120px; /* Dimensione principale delle icone */
+     font-size: 120px; 
      color: #ffc107;
      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
      margin: 0 auto 20px;
@@ -283,14 +283,14 @@ backdrop-filter: blur(10px);
       ------------------------------ */
    .bottomRow {
     display: flex;
-    flex-direction: row;          /* orizzontale */
-    flex-wrap: wrap;             /* le icone vanno a capo se lo spazio è poco */
-    align-items: center;         /* centratura verticale */
-    justify-content: center;     /* centratura orizzontale */
-    gap: 2rem;                   /* spazio tra le sezioni */
-    margin-top: 2rem;            /* se vuoi ridurre ancora, metti 1rem o 0 */
-    padding-top: 1rem;           /* riduci il padding per avere meno “vuoto” */
-    backdrop-filter: blur(3px);  /* resta l’effetto vetro */
+    flex-direction: row;          
+    flex-wrap: wrap;             
+    align-items: center;         
+    justify-content: center;     
+    gap: 2rem;                   
+    margin-top: 2rem;          
+    padding-top: 1rem;          
+    backdrop-filter: blur(3px);  
     font-size: 2rem;
    }
    
@@ -299,7 +299,7 @@ backdrop-filter: blur(10px);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;    /* spazio orizzontale/verticale tra i “blocchi” */
+    gap: 2rem;    
     width: 100%;
     text-align: center;
     font-size: 1.5rem;
@@ -310,14 +310,13 @@ backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem;
-    /* Puoi assegnare una larghezza fissa se vuoi uniformità:
-       width: 120px; */
+   
   }
   
   .extra-temp .two-sided-section i {
-    font-size: 1.5rem;     /* Aumenta la dimensione */
+    font-size: 1.5rem;     
     color: #ff9f1a;
-    margin-bottom: 10px; /* più spazio tra icona e testo */
+    margin-bottom: 10px; 
   }
   
    
@@ -475,7 +474,7 @@ backdrop-filter: blur(10px);
    
    .news-image {
     width: 100%;
-    height: 180px; /* oppure imposta un'altezza minima o massima */
+    height: 180px; 
     object-fit: contain;
   }
   
@@ -494,16 +493,14 @@ backdrop-filter: blur(10px);
    /* ===============================
       Footer Component
       =============================== */
-  /* ===============================
-   Footer Component
-   =============================== */
+
 footer {
-  background: #1a1a1a; /* Cambia il colore di sfondo */
+  background: #1a1a1a; 
   color: #fff;
   padding: 40px 20px;
   text-align: center;
   margin-top: 40px;
-  border-top: 2px solid #333; /* Aggiungi un bordo superiore */
+  border-top: 2px solid #333; 
 }
 
 .footer-container {
